@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q Digital Academy - Professional IT & Tech Training</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2540',
+                        accent: '#E85A1C',
+                        darkbg: '#071628',
+                        cardbg: '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-slate-200 text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-phone text-accent mr-1"></i> +92 327 4760173</span>
+                <span><i class="fa-solid fa-envelope text-accent mr-1"></i> qdigitalacademy@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-accent/20 text-accent font-semibold px-2 py-0.5 rounded text-xs border border-accent/30">Admissions Open 2026</span>
+                <div class="flex gap-2">
+                    <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/923274760173" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name Side-by-Side -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center bg-white shadow-inner overflow-hidden p-0.5">
+                    <div class="w-full h-full rounded-full bg-primary flex items-center justify-center text-white font-black text-xl tracking-tighter relative">
+                        <span class="text-white z-10">Q</span>
+                        <div class="absolute bottom-0 right-0 w-4 h-4 bg-accent rounded-tl-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-extrabold text-primary tracking-tight leading-none group-hover:text-accent transition">Q DIGITAL</h1>
+                    <span class="text-xs font-bold tracking-widest text-accent uppercase">ACADEMY</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm text-slate-600">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#courses" class="hover:text-primary transition">Courses</a>
+                <a href="#features" class="hover:text-primary transition">Why Us</a>
+                <a href="#enroll" class="hover:text-primary transition">Register</a>
+            </nav>
+
+            <!-- Enroll CTA Button -->
+            <div class="hidden sm:block">
+                <a href="#enroll" class="bg-primary hover:bg-slate-800 text-white font-bold px-5 py-2.5 rounded-xl shadow-md transition duration-200 text-sm">
+                    Enroll Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-primary via-darkbg to-slate-900 text-white py-20 lg:py-28 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#E85A1C_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-3 py-1.5 rounded-full text-accent text-xs font-bold border border-white/10">
+                        <i class="fa-solid fa-graduation-cap"></i> Shape Your Tech Future
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Master In-Demand Tech Skills at <span class="text-accent">Q Digital Academy</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0">
+                        Professional Basic-to-Intermediate training in Programming Languages, Web Development, Databases, and Data Analytics with expert mentors.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#courses" class="bg-accent hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-accent/30 transition text-center">
+                            Explore Courses
+                        </a>
+                        <a href="#enroll" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 rounded-xl backdrop-blur border border-white/20 transition text-center">
+                            Join Next Batch
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Stats / Highlights Card -->
+                <div class="bg-white/5 backdrop-blur border border-white/10 p-8 rounded-3xl shadow-2xl">
+                    <h3 class="text-xl font-bold mb-6 text-accent flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check"></i> Academy Highlights
+                    </h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                            <h4 class="text-2xl sm:text-3xl font-extrabold text-white">7+</h4>
+                            <p class="text-xs text-slate-300 mt-1">Professional Courses</p>
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                            <h4 class="text-2xl sm:text-3xl font-extrabold text-accent">4 & 8</h4>
+                            <p class="text-xs text-slate-300 mt-1">Months Flexible Durations</p>
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                            <h4 class="text-2xl sm:text-3xl font-extrabold text-white">100%</h4>
+                            <p class="text-xs text-slate-300 mt-1">Practical Training</p>
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                            <h4 class="text-2xl sm:text-3xl font-extrabold text-accent">Expert</h4>
+                            <p class="text-xs text-slate-300 mt-1">Mentorship Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-accent font-bold text-sm tracking-widest uppercase">Our Curriculum</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-2">Professional Training Programs</h2>
+            <p class="text-slate-600 mt-3 text-sm sm:text-base">Click on <span class="font-semibold text-primary">"View Outline"</span> to check detailed Basic to Intermediate course contents and select your course.</p>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div id="course-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dynamic courses injected via script -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-slate-100 py-16 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-primary">Why Choose Q Digital Academy?</h2>
+                <p class="text-slate-600 text-sm mt-2">We equip students with real-world skills required in the modern software industry.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 text-center">
+                    <div class="w-12 h-12 bg-accent/10 text-accent rounded-xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-primary mb-2">Hands-On Coding</h3>
+                    <p class="text-slate-600 text-sm">Real projects, coding exercises, and practical laboratory sessions for every concept.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 text-center">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-primary mb-2">Flexible Timings</h3>
+                    <p class="text-slate-600 text-sm">Multiple batch schedules available (Morning, Afternoon, Evening, and Weekend slots).</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 text-center">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-primary mb-2">Recognized Certification</h3>
+                    <p class="text-slate-600 text-sm">Earn your completion certificate upon successfully finishing your professional coursework.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration / Enrollment Form with Success Message & WhatsApp Integration -->
+    <section id="enroll" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden relative">
+            <!-- Success Notification Banner -->
+            <div id="success-alert" class="hidden bg-emerald-500 text-white px-6 py-4 flex items-center justify-between shadow-md transition duration-300">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-circle-check text-2xl"></i>
+                    <div>
+                        <h4 class="font-bold text-sm">Registration Successful!</h4>
+                        <p class="text-xs text-emerald-100">Opening WhatsApp to send your enrollment details...</p>
+                    </div>
+                </div>
+                <button onclick="hideSuccessAlert()" class="text-white hover:text-emerald-200"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="bg-primary text-white p-8 text-center relative">
+                <h2 class="text-2xl sm:text-3xl font-extrabold">Student Enrollment Form</h2>
+                <p class="text-slate-300 text-sm mt-2">Fill out your details to register instantly via WhatsApp.</p>
+            </div>
+            
+            <form id="whatsapp-form" onsubmit="sendToWhatsApp(event)" class="p-8 sm:p-10 space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Full Name</label>
+                        <input type="text" id="student-name" required placeholder="e.g. Ali Ahmed" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Phone Number / WhatsApp</label>
+                        <input type="tel" id="student-phone" required placeholder="e.g. 03274760173" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Select Course</label>
+                        <select id="selected-course" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm bg-white">
+                            <option value="">-- Choose Course --</option>
+                            <option value="Python Programming (4 Months - Rs. 4,500/month)">Python Programming (4 Months - Rs. 4,500/mo)</option>
+                            <option value="C++ Programming (4 Months - Rs. 4,500/month)">C++ Programming (4 Months - Rs. 4,500/mo)</option>
+                            <option value="C# Development (4 Months - Rs. 4,500/month)">C# Development (4 Months - Rs. 4,500/mo)</option>
+                            <option value="Java Development (4 Months - Rs. 4,500/month)">Java Development (4 Months - Rs. 4,500/mo)</option>
+                            <option value="HTML & CSS Web Design (4 Months - Rs. 4,500/month)">HTML & CSS Web Design (4 Months - Rs. 4,500/mo)</option>
+                            <option value="SQL Database Management (4 Months - Rs. 4,500/month)">SQL Database Management (4 Months - Rs. 4,500/mo)</option>
+                            <option value="Data Analytics (8 Months - Rs. 6,000/month)">Data Analytics (8 Months - Rs. 6,000/mo)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Preferred Batch Timing</label>
+                        <select id="selected-timing" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm bg-white">
+                            <option value="">-- Choose Timing Slot --</option>
+                            <option value="Morning Slot (10:00 AM - 12:00 PM)">Morning Slot (10:00 AM - 12:00 PM)</option>
+                            <option value="Afternoon Slot (02:00 PM - 04:00 PM)">Afternoon Slot (02:00 PM - 04:00 PM)</option>
+                            <option value="Evening Slot (06:00 PM - 08:00 PM)">Evening Slot (06:00 PM - 08:00 PM)</option>
+                            <option value="Weekend Slot (Sat & Sun: 03:00 PM - 06:00 PM)">Weekend Slot (Sat & Sun: 03:00 PM - 06:00 PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-2 text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Submit & Register via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Course Outline Modal -->
+    <div id="outline-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600 font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-primary border border-white/20 flex items-center justify-center text-white font-bold text-lg">Q</div>
+                    <span class="text-white font-bold text-lg tracking-tight">Q DIGITAL ACADEMY</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-xs mx-auto md:mx-0">
+                    Empowering the next generation of IT professionals with professional technical education and practical training.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+                    <li><a href="#courses" class="hover:text-accent transition">Courses & Fees</a></li>
+                    <li><a href="#features" class="hover:text-accent transition">Why Us</a></li>
+                    <li><a href="#enroll" class="hover:text-accent transition">Enroll Now</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Contact Info</h4>
+                <p class="text-xs mb-2"><i class="fa-solid fa-location-dot text-accent mr-2"></i> Main Tech Blvd, Pakistan</p>
+                <p class="text-xs mb-2"><i class="fa-solid fa-phone text-accent mr-2"></i> +92 327 4760173</p>
+                <p class="text-xs"><i class="fa-solid fa-envelope text-accent mr-2"></i> qdigitalacademy@gmail.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; 2026 Q Digital Academy. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript Data and Functions -->
+    <script>
+        const courses = [
+            {
+                id: 'python',
+                title: 'Python Programming',
+                category: 'Programming',
+                duration: '4 Months',
+                fee: 'Rs. 4,500 / month',
+                icon: 'fa-brands fa-python',
+                outline: 'Basic to Intermediate: Syntax, Data Types, Control Flow, Functions, OOPs in Python, File Handling, and Mini Projects.'
+            },
+            {
+                id: 'cpp',
+                title: 'C++ Programming',
+                category: 'Programming',
+                duration: '4 Months',
+                fee: 'Rs. 4,500 / month',
+                icon: 'fa-solid fa-code',
+                outline: 'Basic to Intermediate: Variables, Loops, Pointers, Functions, Object-Oriented Programming (Classes & Objects), and Data Structures basics.'
+            },
+            {
+                id: 'csharp',
+                title: 'C# Development',
+                category: 'Programming',
+                duration: '4 Months',
+                fee: 'Rs. 4,500 / month',
+                icon: 'fa-solid fa-hashtag',
+                outline: 'Basic to Intermediate: .NET Environment, C# Syntax, OOP Principles, Exception Handling, Collections, and Desktop/Console applications.'
+            },
+            {
+                id: 'java',
+                title: 'Java Development',
+                category: 'Programming',
+                duration: '4 Months',
+                fee: 'Rs. 4,500 / month',
+                icon: 'fa-brands fa-java',
+                outline: 'Basic to Intermediate: JVM, Core Java Syntax, OOP Concepts, Inheritance, Polymorphism, Interfaces, and Exception Handling.'
+            },
+            {
+                id: 'htmlcss',
+                title: 'HTML & CSS Web Design',
+                category: 'Web Design',
+                duration: '4 Months',
+                fee: 'Rs. 4,500 / month',
+                icon: 'fa-solid fa-globe',
+                outline: 'Basic to Intermediate: HTML5 semantics, CSS3 styling, Flexbox, CSS Grid, Responsive Web Design, Tailwind CSS basics, and live landing pages.'
+            },
+            {
+                id: 'sql',
+                title: 'SQL Database Management',
+                category: 'Database',
+                duration: '4 Months',
+                fee: 'Rs. 4,500 / month',
+                icon: 'fa-solid fa-database',
+                outline: 'Basic to Intermediate: Relational Databases, SQL Queries (SELECT, INSERT, UPDATE, DELETE), Joins, Subqueries, Indexing, and Stored Procedures.'
+            },
+            {
+                id: 'dataanalytics',
+                title: 'Data Analytics',
+                category: 'Data Science',
+                duration: '8 Months',
+                fee: 'Rs. 6,000 / month',
+                icon: 'fa-solid fa-chart-line',
+                outline: 'Basic to Intermediate: Excel Advanced, SQL for Data Analysis, Python for Data (Pandas, NumPy), Data Visualization (Power BI / Tableau), and Real Datasets.'
+            }
+        ];
+
+        // Render Courses
+        const grid = document.getElementById('course-grid');
+        courses.forEach(c => {
+            grid.innerHTML += `
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 bg-primary/10 text-primary group-hover:bg-accent group-hover:text-white transition rounded-2xl flex items-center justify-center text-xl font-bold">
+                                <i class="${c.icon}"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">${c.duration}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">${c.title}</h3>
+                        <p class="text-slate-600 text-xs line-clamp-2 mb-4">${c.outline}</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4 pt-4 border-t border-slate-100">
+                            <span class="text-xs text-slate-500 font-medium">Monthly Fee</span>
+                            <span class="font-extrabold text-accent text-sm sm:text-base">${c.fee}</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <button onclick="showOutline('${c.id}')" class="bg-slate-100 hover:bg-slate-200 text-primary font-bold text-xs py-2.5 rounded-xl transition">
+                                View Outline
+                            </button>
+                            <button onclick="selectCourseAndEnroll('${c.title}')" class="bg-primary hover:bg-slate-800 text-white font-bold text-xs py-2.5 rounded-xl transition">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+
+        function showOutline(id) {
+            const course = courses.find(c => c.id === id);
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-accent/10 text-accent rounded-xl flex items-center justify-center text-lg font-bold">
+                        <i class="${course.icon}"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary">${course.title}</h3>
+                        <p class="text-xs text-slate-500">${course.duration} &bull; ${course.fee}</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 mb-6">
+                    <h4 class="text-xs font-bold uppercase text-slate-500 mb-2">Basic to Intermediate Course Outline</h4>
+                    <p class="text-slate-700 text-sm leading-relaxed">${course.outline}</p>
+                </div>
+                <button onclick="selectCourseAndEnroll('${course.title}'); closeModal();" class="w-full bg-accent hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition text-sm">
+                    Select This Course & Enroll
+                </button>
+            `;
+            document.getElementById('outline-modal').classList.remove('hidden');
+            document.getElementById('outline-modal').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('outline-modal').classList.remove('flex');
+            document.getElementById('outline-modal').classList.add('hidden');
+        }
+
+        function selectCourseAndEnroll(title) {
+            const select = document.getElementById('selected-course');
+            for(let i=0; i<select.options.length; i++) {
+                if(select.options[i].text.includes(title)) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById('enroll').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function hideSuccessAlert() {
+            document.getElementById('success-alert').classList.add('hidden');
+        }
+
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('student-name').value;
+            const phone = document.getElementById('student-phone').value;
+            const course = document.getElementById('selected-course').value;
+            const timing = document.getElementById('selected-timing').value;
+
+            // Show success alert banner
+            const alertBox = document.getElementById('success-alert');
+            alertBox.classList.remove('hidden');
+
+            const whatsappNumber = "923274760173"; 
+            const message = `Hello Q Digital Academy! I want to enroll in your course.%0A%0A*Student Name:* ${name}%0A*Phone:* ${phone}%0A*Course:* ${course}%0A*Timing Slot:* ${timing}`;
+            
+            // Open WhatsApp after a brief delay so user sees the success message
+            setTimeout(() => {
+                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+            }, 800);
+
+            // Reset Form
+            document.getElementById('whatsapp-form').reset();
+        }
+    </script>
+</body>
+</html>
