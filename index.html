@@ -136,14 +136,14 @@
     <!-- Courses Section -->
     <section id="courses" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-accent font-bold text-sm tracking-widest uppercase">Our Curriculum</span>
+            <span class="text-accent font-bold text-sm tracking-widest uppercase">Our Curriculum & Timings</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-2">Professional Training Programs</h2>
-            <p class="text-slate-600 mt-3 text-sm sm:text-base">Click on <span class="font-semibold text-primary">"View Outline"</span> to check detailed Basic to Intermediate course contents and select your course.</p>
+            <p class="text-slate-600 mt-3 text-sm sm:text-base">Click on <span class="font-semibold text-primary">"View Outline"</span> to check detailed Basic to Intermediate course contents.</p>
         </div>
 
         <!-- Course Cards Grid -->
         <div id="course-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Dynamic courses injected via script -->
+            <!-- Dynamic course cards injected via script -->
         </div>
     </section>
 
@@ -166,8 +166,8 @@
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                         <i class="fa-solid fa-clock"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-primary mb-2">Flexible Timings</h3>
-                    <p class="text-slate-600 text-sm">Multiple batch schedules available (Morning, Afternoon, Evening, and Weekend slots).</p>
+                    <h3 class="font-bold text-lg text-primary mb-2">Fixed Class Timings</h3>
+                    <p class="text-slate-600 text-sm">Dedicated time slots assigned specifically for each professional course.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 text-center">
                     <div class="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">
@@ -189,7 +189,7 @@
                     <i class="fa-solid fa-circle-check text-2xl"></i>
                     <div>
                         <h4 class="font-bold text-sm">Registration Successful!</h4>
-                        <p class="text-xs text-emerald-100">Opening WhatsApp to send your enrollment details...</p>
+                        <p class="text-xs text-emerald-100">Redirecting to WhatsApp to send your enrollment details...</p>
                     </div>
                 </div>
                 <button onclick="hideSuccessAlert()" class="text-white hover:text-emerald-200"><i class="fa-solid fa-xmark"></i></button>
@@ -217,24 +217,18 @@
                         <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Select Course</label>
                         <select id="selected-course" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm bg-white">
                             <option value="">-- Choose Course --</option>
-                            <option value="Python Programming (4 Months - Rs. 4,500/month)">Python Programming (4 Months - Rs. 4,500/mo)</option>
-                            <option value="C++ Programming (4 Months - Rs. 4,500/month)">C++ Programming (4 Months - Rs. 4,500/mo)</option>
-                            <option value="C# Development (4 Months - Rs. 4,500/month)">C# Development (4 Months - Rs. 4,500/mo)</option>
-                            <option value="Java Development (4 Months - Rs. 4,500/month)">Java Development (4 Months - Rs. 4,500/mo)</option>
-                            <option value="HTML & CSS Web Design (4 Months - Rs. 4,500/month)">HTML & CSS Web Design (4 Months - Rs. 4,500/mo)</option>
-                            <option value="SQL Database Management (4 Months - Rs. 4,500/month)">SQL Database Management (4 Months - Rs. 4,500/mo)</option>
-                            <option value="Data Analytics (8 Months - Rs. 6,000/month)">Data Analytics (8 Months - Rs. 6,000/mo)</option>
+                            <option value="Python Programming (4 Months - Rs. 4,500/month | 10:00 AM - 11:15 AM Mon-Fri)">Python Programming (4 Months - Rs. 4,500/mo)</option>
+                            <option value="C++ Programming (4 Months - Rs. 4,500/month | 11:30 AM - 12:30 PM Mon-Thu)">C++ Programming (4 Months - Rs. 4,500/mo)</option>
+                            <option value="C# Development (4 Months - Rs. 4,500/month | 01:00 PM - 02:15 PM Mon-Fri)">C# Development (4 Months - Rs. 4,500/mo)</option>
+                            <option value="Java Development (4 Months - Rs. 4,500/month | 03:00 PM - 04:15 PM Mon-Fri)">Java Development (4 Months - Rs. 4,500/mo)</option>
+                            <option value="SQL Database Management (4 Months - Rs. 4,500/month | 07:00 PM - 08:15 PM Mon-Fri)">SQL Database Management (4 Months - Rs. 4,500/mo)</option>
+                            <option value="HTML & CSS Web Design (4 Months - Rs. 4,500/month | 08:30 PM - 09:15 PM Mon-Fri)">HTML & CSS Web Design (4 Months - Rs. 4,500/mo)</option>
+                            <option value="Data Analytics (8 Months - Rs. 6,000/month | 09:30 PM - 10:45 PM Mon-Fri)">Data Analytics (8 Months - Rs. 6,000/mo)</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Preferred Batch Timing</label>
-                        <select id="selected-timing" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm bg-white">
-                            <option value="">-- Choose Timing Slot --</option>
-                            <option value="Morning Slot (10:00 AM - 12:00 PM)">Morning Slot (10:00 AM - 12:00 PM)</option>
-                            <option value="Afternoon Slot (02:00 PM - 04:00 PM)">Afternoon Slot (02:00 PM - 04:00 PM)</option>
-                            <option value="Evening Slot (06:00 PM - 08:00 PM)">Evening Slot (06:00 PM - 08:00 PM)</option>
-                            <option value="Weekend Slot (Sat & Sun: 03:00 PM - 06:00 PM)">Weekend Slot (Sat & Sun: 03:00 PM - 06:00 PM)</option>
-                        </select>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Course Timing & Schedule (Auto-assigned)</label>
+                        <input type="text" id="auto-timing" readonly placeholder="Select a course to view timing" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-100 text-slate-600 text-sm font-semibold">
                     </div>
                 </div>
 
@@ -297,6 +291,8 @@
                 category: 'Programming',
                 duration: '4 Months',
                 fee: 'Rs. 4,500 / month',
+                timing: '10:00 AM - 11:15 AM',
+                days: 'Monday to Friday',
                 icon: 'fa-brands fa-python',
                 outline: 'Basic to Intermediate: Syntax, Data Types, Control Flow, Functions, OOPs in Python, File Handling, and Mini Projects.'
             },
@@ -306,6 +302,8 @@
                 category: 'Programming',
                 duration: '4 Months',
                 fee: 'Rs. 4,500 / month',
+                timing: '11:30 AM - 12:30 PM',
+                days: 'Monday to Thursday',
                 icon: 'fa-solid fa-code',
                 outline: 'Basic to Intermediate: Variables, Loops, Pointers, Functions, Object-Oriented Programming (Classes & Objects), and Data Structures basics.'
             },
@@ -315,6 +313,8 @@
                 category: 'Programming',
                 duration: '4 Months',
                 fee: 'Rs. 4,500 / month',
+                timing: '01:00 PM - 02:15 PM',
+                days: 'Monday to Friday',
                 icon: 'fa-solid fa-hashtag',
                 outline: 'Basic to Intermediate: .NET Environment, C# Syntax, OOP Principles, Exception Handling, Collections, and Desktop/Console applications.'
             },
@@ -324,17 +324,10 @@
                 category: 'Programming',
                 duration: '4 Months',
                 fee: 'Rs. 4,500 / month',
+                timing: '03:00 PM - 04:15 PM',
+                days: 'Monday to Friday',
                 icon: 'fa-brands fa-java',
                 outline: 'Basic to Intermediate: JVM, Core Java Syntax, OOP Concepts, Inheritance, Polymorphism, Interfaces, and Exception Handling.'
-            },
-            {
-                id: 'htmlcss',
-                title: 'HTML & CSS Web Design',
-                category: 'Web Design',
-                duration: '4 Months',
-                fee: 'Rs. 4,500 / month',
-                icon: 'fa-solid fa-globe',
-                outline: 'Basic to Intermediate: HTML5 semantics, CSS3 styling, Flexbox, CSS Grid, Responsive Web Design, Tailwind CSS basics, and live landing pages.'
             },
             {
                 id: 'sql',
@@ -342,8 +335,21 @@
                 category: 'Database',
                 duration: '4 Months',
                 fee: 'Rs. 4,500 / month',
+                timing: '07:00 PM - 08:15 PM',
+                days: 'Monday to Friday',
                 icon: 'fa-solid fa-database',
                 outline: 'Basic to Intermediate: Relational Databases, SQL Queries (SELECT, INSERT, UPDATE, DELETE), Joins, Subqueries, Indexing, and Stored Procedures.'
+            },
+            {
+                id: 'htmlcss',
+                title: 'HTML & CSS Web Design',
+                category: 'Web Design',
+                duration: '4 Months',
+                fee: 'Rs. 4,500 / month',
+                timing: '08:30 PM - 09:15 PM',
+                days: 'Monday to Friday',
+                icon: 'fa-solid fa-globe',
+                outline: 'Basic to Intermediate: HTML5 semantics, CSS3 styling, Flexbox, CSS Grid, Responsive Web Design, Tailwind CSS basics, and live landing pages.'
             },
             {
                 id: 'dataanalytics',
@@ -351,6 +357,8 @@
                 category: 'Data Science',
                 duration: '8 Months',
                 fee: 'Rs. 6,000 / month',
+                timing: '09:30 PM - 10:45 PM',
+                days: 'Monday to Friday',
                 icon: 'fa-solid fa-chart-line',
                 outline: 'Basic to Intermediate: Excel Advanced, SQL for Data Analysis, Python for Data (Pandas, NumPy), Data Visualization (Power BI / Tableau), and Real Datasets.'
             }
@@ -368,7 +376,8 @@
                             </div>
                             <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">${c.duration}</span>
                         </div>
-                        <h3 class="text-xl font-bold text-primary mb-2">${c.title}</h3>
+                        <h3 class="text-xl font-bold text-primary mb-1">${c.title}</h3>
+                        <p class="text-accent text-xs font-extrabold mb-3"><i class="fa-solid fa-clock mr-1"></i> ${c.timing} (${c.days})</p>
                         <p class="text-slate-600 text-xs line-clamp-2 mb-4">${c.outline}</p>
                     </div>
                     <div>
@@ -389,6 +398,18 @@
             `;
         });
 
+        // Auto update timing input when dropdown changes
+        document.getElementById('selected-course').addEventListener('change', function() {
+            const val = this.value;
+            const timingInput = document.getElementById('auto-timing');
+            const found = courses.find(c => val.includes(c.title));
+            if(found) {
+                timingInput.value = `${found.timing} (${found.days})`;
+            } else {
+                timingInput.value = '';
+            }
+        });
+
         function showOutline(id) {
             const course = courses.find(c => c.id === id);
             const modalContent = document.getElementById('modal-content');
@@ -401,6 +422,10 @@
                         <h3 class="text-xl font-bold text-primary">${course.title}</h3>
                         <p class="text-xs text-slate-500">${course.duration} &bull; ${course.fee}</p>
                     </div>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 mb-4">
+                    <h4 class="text-xs font-bold uppercase text-slate-500 mb-1">Class Schedule</h4>
+                    <p class="text-accent text-sm font-bold"><i class="fa-solid fa-clock mr-1"></i> ${course.timing} (${course.days})</p>
                 </div>
                 <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 mb-6">
                     <h4 class="text-xs font-bold uppercase text-slate-500 mb-2">Basic to Intermediate Course Outline</h4>
@@ -427,6 +452,9 @@
                     break;
                 }
             }
+            const event = new Event('change');
+            select.dispatchEvent(event);
+
             document.getElementById('enroll').scrollIntoView({ behavior: 'smooth' });
         }
 
@@ -439,22 +467,17 @@
             const name = document.getElementById('student-name').value;
             const phone = document.getElementById('student-phone').value;
             const course = document.getElementById('selected-course').value;
-            const timing = document.getElementById('selected-timing').value;
+            const timing = document.getElementById('auto-timing').value;
 
-            // Show success alert banner
             const alertBox = document.getElementById('success-alert');
             alertBox.classList.remove('hidden');
 
             const whatsappNumber = "923274760173"; 
-            const message = `Hello Q Digital Academy! I want to enroll in your course.%0A%0A*Student Name:* ${name}%0A*Phone:* ${phone}%0A*Course:* ${course}%0A*Timing Slot:* ${timing}`;
+            const message = `Hello Q Digital Academy! I want to enroll in your course.%0A%0A*Student Name:* ${name}%0A*Phone:* ${phone}%0A*Course:* ${course}%0A*Timing & Days:* ${timing}`;
             
-            // Open WhatsApp after a brief delay so user sees the success message
             setTimeout(() => {
-                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+                window.location.href = `https://wa.me/${whatsappNumber}?text=${message}`;
             }, 800);
-
-            // Reset Form
-            document.getElementById('whatsapp-form').reset();
         }
     </script>
 </body>
